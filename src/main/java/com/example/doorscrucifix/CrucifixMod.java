@@ -18,7 +18,7 @@ public class CrucifixMod {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
     private static Item.Properties props() {
-        return new Item.Properties().group(ItemGroup.TAB_COMBAT).maxStackSize(1).rarity(Rarity.EPIC);
+        return new Item.Properties().group(ItemGroup.COMBAT).maxStackSize(1).rarity(Rarity.EPIC);
     }
 
     public static final RegistryObject<Item> ADMIN_CRUCIFIX = ITEMS.register("admin_crucifix", () -> new CrucifixItem(props()));
